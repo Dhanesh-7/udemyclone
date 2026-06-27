@@ -40,10 +40,13 @@
     display: flex;
     gap: 15px;
 }
+.nav__s4{
+    display: none;
+}
 .menu{
     display: flex;
     justify-content: space-around;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.493);
     padding: 7px;
 }
 .menu p{
@@ -94,7 +97,9 @@
     margin-bottom: 10px;
 }
 .course-card{
-    width: 200px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
 }
 .course-card img{
     width: 100%;
@@ -159,4 +164,34 @@
 .footer{
     background-color: black;
     color: white;
+}
+@media screen and (max-width:1300px) {
+    .nav__s2{
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width:800px) {
+    body{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:600px) {
+    .mp__imgcard{
+        flex-basis: 40%;
+    }
+    .course-card{
+        flex-basis: 40%;
+    }
+    .menu{
+        display: none;
+    }
+    .nav__s4{
+        display: block;
+    }
+    .nav__s2{
+        display: none;
+    }
+    .nav__s3{
+        display: none;
+    }
 }
